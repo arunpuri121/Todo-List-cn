@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST APP</title>
+    <link type="text/css" rel="stylesheet" href="todo_css.css">
+    <script src="https://kit.fontawesome.com/b75b16d77e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Todo application</h1>
+        <div id = "container-div">
+
+            <header>
+
+                <div id="form">
+                <span id="logo"><i class="fa-solid fa-rectangle-list"></i></span>
+                <input type="text" name="task-name" id="task" placeholder="Type Your Task Here!!">
+                <button id="add">ADD</button>
+            </div>
+            <br>
+
+            <div id="clear-task">
+            <div id ="comlpete-task" class="link"><p class="decoration"><span><i class="fa-solid fa-check-double"></i></span>
+                Complete all task
+             </p>
+            </div>
+
+            <div id ="clear-completed" class="link">
+               <span>
+                 <p class="decoration">Clear Completed</p>
+               </span>
+            </div>
+            </div>
+            <div class="border"></div>
+            
+        </header>
+
+            <main>
+
+                <ul id="active-task">
+                                       
+                </ul>
+                <div class="border"></div>
+
+            </main>
+
+            <footer>
+
+                <div id="task-left">
+                    <span id="task-count">0</span> tasks left
+                </div>
+
+                <div id="filter">
+                    <span id="all" class="link">All </span>
+                    <span id="uncomplete" class="link">Uncomplete </span>
+                    <span id="complete" class="link">Completed </span>
+                </div>
+                
+            </footer>
+        </div>
+        
+    </div>
+
+    <script src="todo_script.js"></script>
+</body>
+</html>
